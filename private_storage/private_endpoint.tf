@@ -15,6 +15,7 @@ resource "azurerm_private_endpoint" "private-endpoint" {
     name                 = "default-group"
     private_dns_zone_ids = data.azurerm_private_dns_zone.dns-zone.id
   }
+    
   
   timeouts {
     read = "5m"
