@@ -1,3 +1,5 @@
+## Naming
+st `organization` `domain` `application` `stage`
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements

@@ -9,5 +9,5 @@ terraform {
 }
 
 locals {
-  name = "st-${var.organization}-${var.domain}-${var.application}${var.application != "" ? "-" : ""}${var.stage}"
+  name = "st${var.organization}${var.domain}${var.application}${var.stage}"
 }
