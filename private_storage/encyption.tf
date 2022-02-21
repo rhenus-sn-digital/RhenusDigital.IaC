@@ -1,6 +1,6 @@
 locals {
   create-cmk       = var.key_vault_id != ""
-  create-cmk-count = create-cmk ? 1 : 0
+  create-cmk-count = local.create-cmk ? 1 : 0
 }
 
 resource "azurerm_key_vault_access_policy" "storage-account-policy" {
