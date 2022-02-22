@@ -30,24 +30,6 @@ variable "resource_group_name" {
   type        = string
 }
 
-variable "account_tier" {
-  description = "Defines the Tier to use for this storage account. Valid options are Standard and Premium. For BlockBlobStorage and FileStorage accounts only Premium is valid. Changing this forces a new resource to be created."
-  default     = "Standard"
-  type        = string
-}
-
-variable "account_replication_type" {
-  description = "Defines the type of replication to use for this storage account. Valid options are LRS, GRS, RAGRS, ZRS, GZRS and RAGZRS. Changing this forces a new resource to be created when types LRS, GRS and RAGRS are changed to ZRS, GZRS or RAGZRS and vice versa."
-  type        = string
-  default     = "LRS"
-}
-
-variable "min_tls_version" {
-  description = "he minimum supported TLS version for the storage account. Possible values are TLS1_0, TLS1_1, and TLS1_2"
-  default     = "TLS1_2"
-  type        = string
-}
-
 variable "subnet_id" {
   description = "The ID of the Subnet from which Private IP Addresses will be allocated for this Private Endpoint. Changing this forces a new resource to be created."
   type        = string
