@@ -5,10 +5,10 @@ resource "azurerm_private_endpoint" "private-endpoint" {
   subnet_id           = var.subnet_id
 
   private_service_connection {
-    name                           = azurerm_storage_account.storage-account.name
-    private_connection_resource_id = azurerm_storage_account.storage-account.id
+    name                           = azurerm_key_vault.key-vault.name
+    private_connection_resource_id = azurerm_key_vault.key-vault.id
     is_manual_connection           = "false"
-    subresource_names              = ["blob"]
+    subresource_names              = ["vault"]
   }
 
   private_dns_zone_group {
