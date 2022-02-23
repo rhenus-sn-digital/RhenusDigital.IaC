@@ -56,7 +56,7 @@ resource "mssql_user" "user" {
   }
   username = mssql_login.login.login_name
   login_name = mssql_login.login.login_name
-  roles    = [ "db_owner" ]
+  roles    = [ "db_datawriter", "db_datareader", "db_ddladmin"]
   
   depends_on = [mssql_login.login]
 }
