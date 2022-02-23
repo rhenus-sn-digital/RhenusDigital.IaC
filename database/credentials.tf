@@ -54,7 +54,7 @@ resource "mssql_user" "user" {
       password = var.sql_server_administrator_password
     }
   }
-  user_name = mssql_login.login.login_name
+  username = mssql_login.login.login_name
   login_name = mssql_login.login.login_name
   roles    = [ "db_owner" ]
   
