@@ -4,7 +4,7 @@ resource "azurerm_kubernetes_cluster" "private-kubernetes" {
   location                = var.location
   resource_group_name     = var.resource_group_name
   node_resource_group     = var.node_resource_group_name
-  kubernetes_version      = "1.20.7"
+  kubernetes_version      = var.kubernetes_version
   private_cluster_enabled = true
 
   default_node_pool {
@@ -32,7 +32,6 @@ resource "azurerm_kubernetes_cluster" "private-kubernetes" {
   }
 
   oms_agent {
-    enabled                    = true
     log_analytics_workspace_id = var.log_analytics_workspace_id
   }
 

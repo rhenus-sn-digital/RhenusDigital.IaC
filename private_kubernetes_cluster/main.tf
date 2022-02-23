@@ -9,5 +9,5 @@ terraform {
 }
 
 locals {
-  name = "k8s-${var.organization}-${var.domain}-${var.application}${var.application == "" ? "" : "-"}${var.stage}"
+  name = "aks-${var.organization}-${var.domain}-${var.application}${var.application == "" ? "" : "-"}${var.stage}"
 }
