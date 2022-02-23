@@ -40,13 +40,14 @@ resource "mssql_login" "login" {
     }
   }
   default_database = azurerm_mssql_database.database.name
-  login_name = local.create-login ? random_string.user-login[0].result : var.user_login
-  password = local.create-password ? random_password.user-password[0].result : var.user_password
-  
+  login_name       = local.create-login ? random_string.user-login[0].result : var.user_login
+  password         = local.create-password ? random_password.user-password[0].result : var.user_password
+
   depends_on = [azurerm_mssql_database.database]
 }
 
 resource "mssql_user" "user" {
+  database = azurerm_mssql_database.database.name
   server {
     host = data.azurerm_mssql_server.sql-server.fully_qualified_domain_name
     login {
@@ -54,9 +55,9 @@ resource "mssql_user" "user" {
       password = var.sql_server_administrator_password
     }
   }
-  username = mssql_login.login.login_name
+  username   = mssql_login.login.login_name
   login_name = mssql_login.login.login_name
-  roles    = [ "db_datawriter", "db_datareader", "db_ddladmin"]
-  
+  roles      = ["db_owner"]
+
   depends_on = [mssql_login.login]
 }
