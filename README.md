@@ -19,7 +19,7 @@
 | kubernetes nodes     | aks-`organization`-node-`stage`                    | aks-rhenus-digital-node-prod   |
 | sql server           | aks-`organization`-[`application`-]`stage`         | sql-rhenus-digital-prod        |
 | sql databases        | sqldb-`domain`-[`application`-]`stage`             | sqldb-booking-prod             |
-| cosmos               | aks-`organization`-[`application`-]`stage`         | sql-rhenus-digital-prod        |
+| cosmos               | cosmos-`organization`-[`application`-]`stage`      | sql-rhenus-digital-prod        |
 | service bus          | sb-`organization`-`domain`-[`application`-]`stage` | sb-rhenus-digital-booking-prod |
 | service bus topic    | sbt-`domain`-[`application`-]                      | sbt-booking                    |
 | virtual networks     | vnet-`organization`-`stage`                        | vnet-rhenus-digital-prod       |
