@@ -18,3 +18,8 @@ variable "location" {
   description = "The location of the resource for the deployment."
   type        = string
 }
+
+variable "tags" {
+  description = "A mapping of tags to assign to the resource."
+  type        = map(string)
+}
