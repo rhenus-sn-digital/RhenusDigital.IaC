@@ -28,7 +28,3 @@ data "azurerm_mssql_server" "sql-server" {
   resource_group_name = var.sql_server_resource_group_name
 }
 
-
-
-
-

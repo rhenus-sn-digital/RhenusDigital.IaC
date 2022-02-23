@@ -23,6 +23,7 @@ variable "organization" {
 variable "location" {
   description = "The location of the resource for the deployment."
   type        = string
+  default     = "northeurope"
 }
 
 variable "resource_group_name" {

@@ -23,6 +23,7 @@ variable "organization" {
 variable "location" {
   description = "The location of the resource for the deployment."
   type        = string
+  default     = "northeurope"
 }
 
 variable "resource_group_name" {
@@ -53,7 +54,7 @@ variable "sql_server_resource_group_name" {
 
 variable "sql_server_administrator_password" {
   description = "The administrator password to create user accounts with"
-  type = string
+  type        = string
 }
 
 variable "elastic_pool_id" {
@@ -63,32 +64,32 @@ variable "elastic_pool_id" {
 
 variable "collation" {
   description = "Specifies the collation of the database. Changing this forces a new resource to be created."
-  type = string
-  default = "SQL_Latin1_General_CP1_CS_AS"
+  type        = string
+  default     = "SQL_Latin1_General_CP1_CS_AS"
 }
 
 variable "weekly_retention" {
   description = "The weekly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 520 weeks. e.g. P1Y, P1M, P1W or P7D."
-  type = string
-  default = "P6W"
+  type        = string
+  default     = "P6W"
 }
 
 variable "monthly_retention" {
   description = "The monthly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 120 months. e.g. P1Y, P1M, P4W or P30D."
-  type = string
-  default = "P12M"
+  type        = string
+  default     = "P12M"
 }
 
 variable "yearly_retention" {
   description = "The yearly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 10 years. e.g. P1Y, P12M, P52W or P365D."
-  type = string
-  default = "P3Y"
+  type        = string
+  default     = "P3Y"
 }
 
 variable "week_of_year" {
   description = "The week of year to take the yearly backup in an ISO 8601 format. Value has to be between 1 and 52"
-  type = string
-  default = "16"
+  type        = string
+  default     = "16"
 }
 
 variable "auditing_storage_account_name" {

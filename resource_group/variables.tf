@@ -17,6 +17,7 @@ variable "application" {
 variable "location" {
   description = "The location of the resource for the deployment."
   type        = string
+  default     = "northeurope"
 }
 
 variable "tags" {
