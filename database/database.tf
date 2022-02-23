@@ -1,7 +1,7 @@
 resource "azurerm_mssql_database" "database" {
   name            = local.name
   elastic_pool_id = var.elastic_pool_id
-  server_id       = var.sql_server_id
+  server_id       = data.azurerm_mssql_server.sql-server.id
   tags            = var.tags
   collation       = var.collation
 

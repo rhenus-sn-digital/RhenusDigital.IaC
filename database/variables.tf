@@ -41,9 +41,19 @@ variable "tags" {
   type        = map(string)
 }
 
-variable "sql_server_id" {
+variable "sql_server_name" {
   description = "The id of the Ms SQL Server on which to create the database. Changing this forces a new resource to be created."
   type        = string
+}
+
+variable "sql_server_resource_group_name" {
+  description = "The resource group name of the Ms SQL Server on which to create the database. Changing this forces a new resource to be created."
+  type        = string
+}
+
+variable "sql_server_administrator_password" {
+  description = "The administrator password to create user accounts with"
+  type = string
 }
 
 variable "elastic_pool_id" {
@@ -89,6 +99,18 @@ variable "auditing_storage_account_name" {
 
 variable "auditing_storage_account_resource_group_name" {
   description = "If not empty, the storage account will be used for auditing logs."
+  default     = ""
+  type        = string
+}
+
+variable "user_login" {
+  description = "If not set, a login will be generated"
+  default     = ""
+  type        = string
+}
+
+variable "user_password" {
+  description = "If not set, a password will be generated"
   default     = ""
   type        = string
 }
