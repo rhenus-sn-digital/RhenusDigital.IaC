@@ -31,12 +31,11 @@ resource "azurerm_kubernetes_cluster" "private-kubernetes" {
     client_secret = var.service_principal_client_secret
   }
 
-  addon_profile {
-    oms_agent {
-      enabled                    = true
-      log_analytics_workspace_id = var.log_analytics_workspace_id
-    }
+  osm_agent {
+    enabled                    = true
+    log_analytics_workspace_id = var.log_analytics_workspace_id
   }
+
 
   lifecycle {
     ignore_changes = [default_node_pool["node_count"]]

@@ -32,7 +32,7 @@ variable "resource_group_name" {
 
 variable "kubernetes_version" {
   description = "The Kubernetes version to setup the cluster with."
-  default     = "1.20.7"
+  default     = "1.22.6"
   type        = string
 }
 
