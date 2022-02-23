@@ -40,5 +40,5 @@ resource "azurerm_private_dns_a_record" "endpoint-dns-a-record" {
 }
 
 data "azurerm_private_dns_zone" "dns-zone" {
-  name = var.dns_zone_name
+  name = "privatelink.vaultcore.azure.net"
 }

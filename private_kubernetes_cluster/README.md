@@ -35,7 +35,7 @@ No modules.
 | <a name="input_default_node_pool_vm_size"></a> [default\_node\_pool\_vm\_size](#input\_default\_node\_pool\_vm\_size) | The size of the Virtual Machine, such as Standard\_DS2\_v2 | `string` | `"Standard_B2s"` | no |
 | <a name="input_domain"></a> [domain](#input\_domain) | The name of the domain, to which this resource belongs (e.g. booking) | `string` | n/a | yes |
 | <a name="input_kubernetes_version"></a> [kubernetes\_version](#input\_kubernetes\_version) | The Kubernetes version to setup the cluster with. | `string` | `"1.22.6"` | no |
-| <a name="input_location"></a> [location](#input\_location) | The location of the resource for the deployment. | `string` | n/a | yes |
+| <a name="input_location"></a> [location](#input\_location) | The location of the resource for the deployment. | `string` | `"northeurope"` | no |
 | <a name="input_log_analytics_workspace_id"></a> [log\_analytics\_workspace\_id](#input\_log\_analytics\_workspace\_id) | The ID of the Log Analytics Workspace which the OMS Agent should send data to. | `string` | n/a | yes |
 | <a name="input_node_resource_group_name"></a> [node\_resource\_group\_name](#input\_node\_resource\_group\_name) | The resource group in which the resource will be deployed. | `string` | n/a | yes |
 | <a name="input_organization"></a> [organization](#input\_organization) | The name of the organization (e.g. rsdn) | `string` | `"rsdn"` | no |

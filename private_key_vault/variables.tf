@@ -42,11 +42,6 @@ variable "tags" {
   type        = map(string)
 }
 
-variable "dns_zone_name" {
-  description = "Specifies the Private DNS Zone to include within the private_dns_zone_group"
-  type = string
-}
-
 variable "enabled_for_disk_encryption" {
   description = "Boolean flag to specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys."
   default = true
