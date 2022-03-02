@@ -45,7 +45,7 @@ No modules.
 | <a name="input_elastic_pool_id"></a> [elastic\_pool\_id](#input\_elastic\_pool\_id) | Specifies the ID of the elastic pool containing this database. | `string` | n/a | yes |
 | <a name="input_location"></a> [location](#input\_location) | The location of the resource for the deployment. | `string` | `"northeurope"` | no |
 | <a name="input_monthly_retention"></a> [monthly\_retention](#input\_monthly\_retention) | The monthly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 120 months. e.g. P1Y, P1M, P4W or P30D. | `string` | `"P12M"` | no |
-| <a name="input_organization"></a> [organization](#input\_organization) | The name of the organization (e.g. rsdn) | `string` | `"rsdn"` | no |
+| <a name="input_organization"></a> [organization](#input\_organization) | The name of the organization (e.g. rsdn) | `string` | `"rsnd"` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The resource group in which the resource will be deployed. | `string` | n/a | yes |
 | <a name="input_sql_server_administrator_password"></a> [sql\_server\_administrator\_password](#input\_sql\_server\_administrator\_password) | The administrator password to create user accounts with | `string` | n/a | yes |
 | <a name="input_sql_server_name"></a> [sql\_server\_name](#input\_sql\_server\_name) | The id of the Ms SQL Server on which to create the database. Changing this forces a new resource to be created. | `string` | n/a | yes |

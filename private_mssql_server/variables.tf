@@ -16,7 +16,7 @@ variable "application" {
 
 variable "organization" {
   description = "The name of the organization (e.g. rsdn)"
-  default     = "rsdn"
+  default     = "rsnd"
   type        = string
 }
 
