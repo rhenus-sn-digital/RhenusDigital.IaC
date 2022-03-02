@@ -23,7 +23,7 @@ Prefix = rhscl`subscription_number`rg0
 | service bus          | rhscl`subscription_number`rg0psb-`domain`-[`application`-]`stage` | rhscl0019rg0psb-booking-prod    |
 | service bus topic    | sbt-`domain`-[`application`-]                                     | sbt-booking                     |
 | virtual networks     | rhscl`subscription_number`rg0vnet-`stage`                         | rhscl0019rg0vnet-prod           |
-| subnets              | rhscl`subscription_number`rg0sub-`name`-stage`                    | rhscl0019rg0sub-app-prod        |
+| subnets              | rhscl`subscription_number`rg0sub-`name`-`stage`                   | rhscl0019rg0sub-app-prod        |
 | container registries | rhscl`subscription_number`rg0acr                                  | rhscl0019rg0acr                 |
 | application insights | rhscl`subscription_number`rg0appi-`stage`                         | rhscl0019rg0appi-prod           |
 | log analytics        | rhscl`subscription_number`rg0log-`domain`-`stage`                 | rhscl0019rg0log-kubernetes-prod |
