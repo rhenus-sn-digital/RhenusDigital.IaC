@@ -4,5 +4,5 @@ output "user" {
 
 output "password" {
   sensitive = true
-  value = mssql_login.login.password
+  value     = mssql_login.login.password
 }
