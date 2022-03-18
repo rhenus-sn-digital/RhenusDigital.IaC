@@ -26,7 +26,6 @@ variable "domain" {
 
 variable "application" {
   description = "(Optional) The name of the application, to which this resource belongs (e.g. booking-service)"
-  default     = ""
   type        = string
 }
 
