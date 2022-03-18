@@ -8,6 +8,7 @@
 
 [private_storage](private_storage/README.md)
 
+
 ## Naming convention
 
 | Resource             | Convention                                         | Example                        |
@@ -27,4 +28,3 @@
 | container registries | cr-`organization`                                  | cr-rhenus-digital              |
 | application insights | appi-`organization`-`stage`                        | appi-rhenus-digital-prod       |
 | log analytics        | log-`domain`-`stage`                               | log-kubernetes-prod            |
- 
