@@ -1,6 +1,6 @@
 variable "cosmos_db_account_name" {
   description = "The name of the cosmos db account"
-  type        = "string"
+  type        = string
 }
 
 variable "resource_group_name" {
