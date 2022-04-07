@@ -26,17 +26,6 @@ variable "location" {
   default     = "northeurope"
 }
 
-variable "resource_group_name" {
-  description = "The resource group in which the resource will be deployed."
-  type        = string
-}
-
-
-variable "subnet_id" {
-  description = "The ID of the Subnet from which Private IP Addresses will be allocated for this Private Endpoint. Changing this forces a new resource to be created."
-  type        = string
-}
-
 variable "tags" {
   description = "A mapping of tags to assign to the resource."
   type        = map(string)

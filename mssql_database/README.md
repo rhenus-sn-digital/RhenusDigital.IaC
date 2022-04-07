@@ -46,12 +46,10 @@ No modules.
 | <a name="input_location"></a> [location](#input\_location) | The location of the resource for the deployment. | `string` | `"northeurope"` | no |
 | <a name="input_monthly_retention"></a> [monthly\_retention](#input\_monthly\_retention) | The monthly retention policy for an LTR backup in an ISO 8601 format. Valid value is between 1 to 120 months. e.g. P1Y, P1M, P4W or P30D. | `string` | `"P12M"` | no |
 | <a name="input_organization"></a> [organization](#input\_organization) | The name of the organization (e.g. rsdn) | `string` | `"rsnd"` | no |
-| <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The resource group in which the resource will be deployed. | `string` | n/a | yes |
 | <a name="input_sql_server_administrator_password"></a> [sql\_server\_administrator\_password](#input\_sql\_server\_administrator\_password) | The administrator password to create user accounts with | `string` | n/a | yes |
 | <a name="input_sql_server_name"></a> [sql\_server\_name](#input\_sql\_server\_name) | The id of the Ms SQL Server on which to create the database. Changing this forces a new resource to be created. | `string` | n/a | yes |
 | <a name="input_sql_server_resource_group_name"></a> [sql\_server\_resource\_group\_name](#input\_sql\_server\_resource\_group\_name) | The resource group name of the Ms SQL Server on which to create the database. Changing this forces a new resource to be created. | `string` | n/a | yes |
 | <a name="input_stage"></a> [stage](#input\_stage) | The name of the stage, in which this resource will be deployed. | `string` | n/a | yes |
-| <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | The ID of the Subnet from which Private IP Addresses will be allocated for this Private Endpoint. Changing this forces a new resource to be created. | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | A mapping of tags to assign to the resource. | `map(string)` | n/a | yes |
 | <a name="input_user_login"></a> [user\_login](#input\_user\_login) | If not set, a login will be generated | `string` | `""` | no |
 | <a name="input_user_password"></a> [user\_password](#input\_user\_password) | If not set, a password will be generated | `string` | `""` | no |
