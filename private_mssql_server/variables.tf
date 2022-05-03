@@ -47,6 +47,11 @@ variable "dns_zone_name" {
   type        = string
 }
 
+variable "dns_zone_resource_group" {
+  description = "Specifies the private DNS Zones resource group"
+  ype         = string
+}
+
 variable "administrator_login" {
   description = "If not set, a login will be generated"
   default     = ""
