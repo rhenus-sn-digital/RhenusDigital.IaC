@@ -6,7 +6,7 @@ resource "azurerm_mssql_server" "mssql-server" {
 
   public_network_access_enabled = false
   administrator_login           = local.create-login ? random_string.administrator-login[0].result : var.administrator_login
-  administrator_login_password  = local.create-password ? random_password.administrator-password[0] : var.administrator_login_password
+  administrator_login_password  = local.create-password ? random_password.administrator-password[0].result : var.administrator_login_password
 
   version             = "12.0"
   minimum_tls_version = "1.2"
