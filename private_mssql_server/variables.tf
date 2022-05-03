@@ -47,6 +47,11 @@ variable "dns_zone_name" {
   type        = string
 }
 
+variable "dns_zone_id" {
+  description = "Specifies the Private DNS Zone id to include within the private_dns_zone_group"
+  type        = string
+}
+
 variable "dns_zone_resource_group" {
   description = "Specifies the private DNS Zones resource group"
   type        = string
