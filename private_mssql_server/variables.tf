@@ -49,7 +49,7 @@ variable "dns_zone_name" {
 
 variable "dns_zone_resource_group" {
   description = "Specifies the private DNS Zones resource group"
-  ype         = string
+  type        = string
 }
 
 variable "administrator_login" {
