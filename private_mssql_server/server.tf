@@ -16,7 +16,7 @@ resource "azurerm_mssql_server" "mssql-server" {
   }
 
   lifecycle {
-    prevent_destroy = var.prevent_destroy
+    prevent_destroy = true
     ignore_changes  = [
       restorable_dropped_database_ids
     ]

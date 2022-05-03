@@ -59,12 +59,6 @@ variable "administrator_login_password" {
   type        = string
 }
 
-variable "prevent_destroy" {
-  description = "If set, the database destruction will be prevented."
-  default     = true
-  type        = bool
-}
-
 variable "key_vault_id" {
   description = "Set the key vault id, to activate CMK"
   type        = string

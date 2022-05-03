@@ -1,5 +1,4 @@
 <!-- BEGIN_TF_DOCS -->
-
 ## Requirements
 
 | Name | Version |
@@ -44,5 +43,4 @@ No modules.
 | <a name="output_app_subnet_id"></a> [app\_subnet\_id](#output\_app\_subnet\_id) | n/a |
 | <a name="output_mgm_subnet_id"></a> [mgm\_subnet\_id](#output\_mgm\_subnet\_id) | n/a |
 | <a name="output_server_subnet_id"></a> [server\_subnet\_id](#output\_server\_subnet\_id) | n/a |
-
 <!-- END_TF_DOCS -->
