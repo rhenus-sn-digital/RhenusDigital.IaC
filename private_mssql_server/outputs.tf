@@ -11,6 +11,10 @@ output "server_name" {
   value = azurerm_mssql_server.mssql-server.name
 }
 
+output "server_host" {
+  value = azurerm_mssql_server.mssql-server.fully_qualified_domain_name
+}
+
 output "resource_group_name" {
   value = azurerm_mssql_server.mssql-server.resource_group_name
 }
