@@ -35,3 +35,18 @@ variable "subnet_id" {
   description = "The ID of the Subnet from which Private IP Addresses will be allocated for this Private Endpoint. Changing this forces a new resource to be created."
   type        = string
 }
+
+variable "dns_zone_name" {
+  description = "Specifies the Private DNS Zone to include within the private_dns_zone_group"
+  type        = string
+}
+
+variable "dns_zone_id" {
+  description = "Specifies the Private DNS Zone id to include within the private_dns_zone_group"
+  type        = string
+}
+
+variable "dns_zone_resource_group" {
+  description = "Specifies the private DNS Zones resource group"
+  type        = string
+}
