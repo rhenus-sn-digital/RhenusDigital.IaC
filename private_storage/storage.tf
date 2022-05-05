@@ -1,4 +1,5 @@
 ## Storage Account
+
 resource "azurerm_storage_account" "storage-account" {
   name                     = local.name
   location                 = var.location

@@ -60,5 +60,6 @@ No modules.
 | <a name="output_administrator_login"></a> [administrator\_login](#output\_administrator\_login) | n/a |
 | <a name="output_administrator_login_password"></a> [administrator\_login\_password](#output\_administrator\_login\_password) | n/a |
 | <a name="output_resource_group_name"></a> [resource\_group\_name](#output\_resource\_group\_name) | n/a |
+| <a name="output_server_host"></a> [server\_host](#output\_server\_host) | n/a |
 | <a name="output_server_name"></a> [server\_name](#output\_server\_name) | n/a |
 <!-- END_TF_DOCS -->
