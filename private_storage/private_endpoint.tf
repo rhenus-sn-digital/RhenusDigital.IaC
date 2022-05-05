@@ -13,9 +13,9 @@ resource "azurerm_private_endpoint" "private-endpoint" {
 
   private_dns_zone_group {
     name                 = "default-group"
-    private_dns_zone_ids = [data.azurerm_private_dns_zone.dns-zone.id]
+    private_dns_zone_ids = [var.dns_zone_id]
   }
-  
+
   timeouts {
     read = "5m"
   }
@@ -25,8 +25,8 @@ resource "azurerm_private_endpoint" "private-endpoint" {
 
 resource "azurerm_private_dns_a_record" "endpoint-dns-a-record" {
   name                = lower(local.name)
-  zone_name           = data.azurerm_private_dns_zone.dns-zone.name
-  resource_group_name = data.azurerm_private_dns_zone.dns-zone.resource_group_name
+  zone_name           = var.dns_zone_name
+  resource_group_name = var.dns_zone_resource_group
   ttl                 = 300
   records             = [
     azurerm_private_endpoint.private-endpoint.private_service_connection[0].private_ip_address
@@ -37,8 +37,4 @@ resource "azurerm_private_dns_a_record" "endpoint-dns-a-record" {
   ]
 
   tags = var.tags
-}
-
-data "azurerm_private_dns_zone" "dns-zone" {
-  name = var.dns_zone_name
 }

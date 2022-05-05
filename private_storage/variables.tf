@@ -41,13 +41,23 @@ variable "tags" {
   type        = map(string)
 }
 
-variable "dns_zone_name" {
-  description = "Specifies the Private DNS Zone to include within the private_dns_zone_group"
-  type = string
-}
-
 variable "key_vault_id" {
   description = "The ID of the Key Vault to create a CMK. If not set, no CMK is created. Changing this forces a new resource to be created."
-  default = ""
-  type = string
+  default     = ""
+  type        = string
+}
+
+variable "dns_zone_name" {
+  description = "Specifies the Private DNS Zone to include within the private_dns_zone_group"
+  type        = string
+}
+
+variable "dns_zone_id" {
+  description = "Specifies the Private DNS Zone id to include within the private_dns_zone_group"
+  type        = string
+}
+
+variable "dns_zone_resource_group" {
+  description = "Specifies the private DNS Zones resource group"
+  type        = string
 }
