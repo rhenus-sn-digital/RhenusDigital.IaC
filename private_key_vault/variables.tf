@@ -50,12 +50,28 @@ variable "enabled_for_disk_encryption" {
 
 variable "soft_delete_retention_days" {
   description = "The number of days that items should be retained for once soft-deleted. This value can be between 7 and 90 "
-  default = 7
-  type = number
+  default     = 7
+  type        = number
 }
 
 variable "sku" {
   description = "he Name of the SKU used for this Key Vault. Possible values are standard and premium"
-  default = "standard"
-  type = string
+  default     = "standard"
+  type        = string
+}
+
+
+variable "dns_zone_name" {
+  description = "Specifies the Private DNS Zone to include within the private_dns_zone_group"
+  type        = string
+}
+
+variable "dns_zone_id" {
+  description = "Specifies the Private DNS Zone id to include within the private_dns_zone_group"
+  type        = string
+}
+
+variable "dns_zone_resource_group" {
+  description = "Specifies the private DNS Zones resource group"
+  type        = string
 }
