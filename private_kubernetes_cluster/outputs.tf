@@ -15,5 +15,5 @@ output "client_certificate" {
 }
 
 output "ca_certificate" {
-  value = azurerm_kubernetes_cluster.private-kubernetes.kube_config[0].cluster_ca_certificatey
+  value = azurerm_kubernetes_cluster.private-kubernetes.kube_config[0].cluster_ca_certificate
 }
