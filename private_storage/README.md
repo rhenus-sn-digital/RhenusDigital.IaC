@@ -25,6 +25,7 @@ No modules.
 |------|------|
 | [azurerm_key_vault_access_policy.storage-account-policy](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_access_policy) | resource |
 | [azurerm_key_vault_key.encryption-key](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_key) | resource |
+| [azurerm_private_dns_a_record.endpoint-dns-a-record](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_dns_a_record) | resource |
 | [azurerm_private_endpoint.private-endpoint](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_endpoint) | resource |
 | [azurerm_storage_account.storage-account](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account) | resource |
 | [azurerm_storage_account_customer_managed_key.cmk](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account_customer_managed_key) | resource |
@@ -54,5 +55,4 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_name"></a> [name](#output\_name) | n/a |
-| <a name="output_private-ip"></a> [private-ip](#output\_private-ip) | n/a |
 <!-- END_TF_DOCS -->

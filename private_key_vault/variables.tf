@@ -44,8 +44,8 @@ variable "tags" {
 
 variable "enabled_for_disk_encryption" {
   description = "Boolean flag to specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys."
-  default     = true
-  type        = bool
+  default = true
+  type = bool
 }
 
 variable "soft_delete_retention_days" {
@@ -73,10 +73,5 @@ variable "dns_zone_id" {
 
 variable "dns_zone_resource_group" {
   description = "Specifies the private DNS Zones resource group"
-  type        = string
-}
-
-variable "service_principle_id" {
-  description = "ID of the service principle to set the access policies for in the key vault."
   type        = string
 }
