@@ -17,7 +17,7 @@ resource "azurerm_private_endpoint" "private-endpoint" {
   }
 
   timeouts {
-    read = "5m"
+    read = "1m"
   }
 
   tags = var.tags
