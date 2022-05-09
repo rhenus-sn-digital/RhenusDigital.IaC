@@ -9,3 +9,7 @@ output "id" {
 output "private-ip" {
   value = azurerm_private_endpoint.private-endpoint.private_service_connection[0].private_ip_address
 }
+
+output "name" {
+  value = azurerm_key_vault.key-vault.name
+}
