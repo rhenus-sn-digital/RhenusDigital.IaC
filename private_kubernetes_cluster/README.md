@@ -50,5 +50,9 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_ca_certificate"></a> [ca\_certificate](#output\_ca\_certificate) | n/a |
+| <a name="output_client_certificate"></a> [client\_certificate](#output\_client\_certificate) | n/a |
+| <a name="output_client_key"></a> [client\_key](#output\_client\_key) | n/a |
+| <a name="output_host"></a> [host](#output\_host) | n/a |
 | <a name="output_id"></a> [id](#output\_id) | n/a |
 <!-- END_TF_DOCS -->
