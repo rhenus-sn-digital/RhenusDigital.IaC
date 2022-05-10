@@ -53,6 +53,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_connection_string"></a> [connection\_string](#output\_connection\_string) | n/a |
 | <a name="output_name"></a> [name](#output\_name) | n/a |
 | <a name="output_private-ip"></a> [private-ip](#output\_private-ip) | n/a |
 <!-- END_TF_DOCS -->
