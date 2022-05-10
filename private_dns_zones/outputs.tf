@@ -1,31 +1,31 @@
 output "blob_dns_zone_id" {
-  value = azurerm_private_dns_zone.blob-dns-zone.id
+  value = var.create_dns_zones ? azurerm_private_dns_zone.blob-dns-zone[0].id : data.azurerm_private_dns_zone.blob-dns-zone[0].id
 }
 
 output "blob_dns_zone_name" {
-  value = azurerm_private_dns_zone.blob-dns-zone.name
+  value = var.create_dns_zones ? azurerm_private_dns_zone.blob-dns-zone[0].name : data.azurerm_private_dns_zone.blob-dns-zone[0].name
 }
 
 output "cosmos_dns_zone_id" {
-  value = azurerm_private_dns_zone.cosmos-dns-zone.id
+  value = var.create_dns_zones ? azurerm_private_dns_zone.cosmos-dns-zone[0].id : data.azurerm_private_dns_zone.cosmos-dns-zone[0].id
 }
 
 output "cosmos_dns_name" {
-  value = azurerm_private_dns_zone.cosmos-dns-zone.name
+  value = var.create_dns_zones ? azurerm_private_dns_zone.cosmos-dns-zone[0].name : data.azurerm_private_dns_zone.cosmos-dns-zone[0].name
 }
 
 output "vault_dns_zone_id" {
-  value = azurerm_private_dns_zone.vault-dns-zone.id
+  value = var.create_dns_zones ? azurerm_private_dns_zone.vault-dns-zone[0].id : data.azurerm_private_dns_zone.vault-dns-zone[0].id
 }
 
 output "vault_dns_zone_name" {
-  value = azurerm_private_dns_zone.vault-dns-zone.name
+  value = var.create_dns_zones ? azurerm_private_dns_zone.vault-dns-zone[0].name : data.azurerm_private_dns_zone.vault-dns-zone[0].name
 }
 
 output "sql_dns_zone_id" {
-  value = azurerm_private_dns_zone.sql-dns-zone.id
+  value = var.create_dns_zones ? azurerm_private_dns_zone.sql-dns-zone[0].id : data.azurerm_private_dns_zone.sql-dns-zone[0].id
 }
 
 output "sql_dns_name" {
-  value = azurerm_private_dns_zone.sql-dns-zone.name
+  value = var.create_dns_zones ? azurerm_private_dns_zone.sql-dns-zone[0].name : data.azurerm_private_dns_zone.sql-dns-zone[0].name
 }
