@@ -18,3 +18,6 @@ output "server_host" {
 output "resource_group_name" {
   value = azurerm_mssql_server.mssql-server.resource_group_name
 }
+output "server_id" {
+  value = azurerm_mssql_server.mssql-server.id
+}
