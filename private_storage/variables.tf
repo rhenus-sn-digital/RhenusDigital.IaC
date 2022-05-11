@@ -77,3 +77,22 @@ variable "min_tls_version" {
   default     = "TLS1_2"
   type        = string
 }
+
+variable "sp_client_id" {
+  description = "The client id of the service principal with the access to the cit dns resource group"
+  type        = string
+}
+variable "sp_client_secret" {
+  description = "The client secret of the service principal with the access to the cit dns resource group"
+  type        = string
+}
+variable "cit_subscription_id" {
+  description = "The id of the cit subscription"
+  default     = "eab56485-7583-4e1d-94d2-901733abfb89"
+  type        = string
+}
+variable "cit_tenant_id" {
+  description = "The tenant id of the cit subscription"
+  default     = "86447cc8-41de-4a89-b777-2f7a3ffdc1a3"
+  type        = string
+}

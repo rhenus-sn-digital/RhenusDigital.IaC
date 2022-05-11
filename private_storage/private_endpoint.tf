@@ -25,7 +25,7 @@ resource "azurerm_private_endpoint" "private-endpoint" {
 data "azurerm_subscription" "current" {}
 
 resource "azurerm_private_dns_a_record" "cit-dns-record" {
-  provider = azurerm.cit
+  provider = cit
 
   name                = azurerm_storage_account.storage-account.name
   records             = azurerm_private_endpoint.private-endpoint.private_service_connection[0].private_ip_address
