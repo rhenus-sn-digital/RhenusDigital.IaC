@@ -12,3 +12,12 @@ terraform {
 locals {
   name = "st${var.organization}${var.domain}${var.application}${var.stage}"
 }
+
+provider "azurerm" {
+  alias = "default"
+  features {}
+}
+provider "azurerm" {
+  alias = "cit"
+  features {}
+}
