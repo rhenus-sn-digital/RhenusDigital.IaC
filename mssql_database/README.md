@@ -62,6 +62,7 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_connection_string"></a> [connection\_string](#output\_connection\_string) | n/a |
+| <a name="output_name"></a> [name](#output\_name) | n/a |
 | <a name="output_password"></a> [password](#output\_password) | n/a |
 | <a name="output_user"></a> [user](#output\_user) | n/a |
 <!-- END_TF_DOCS -->
