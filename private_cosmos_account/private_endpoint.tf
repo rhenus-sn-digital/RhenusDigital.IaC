@@ -44,7 +44,7 @@ resource "azurerm_private_dns_a_record" "cit-dns-record-north-europe" {
   provider = azurerm.cit
 
   name                = "${azurerm_cosmosdb_account.cosmos-db-account.name}-northeurope"
-  records             = [azurerm_private_endpoint.private-endpoint.custom_dns_configs[1].ip_addresses]
+  records             = [azurerm_private_endpoint.private-endpoint.private_dns_zone_configs[1].ip_addresses[0]]
   resource_group_name = "app_0003_DNS_prod_rg"
   ttl                 = 300
   zone_name           = "privatelink.documents.azure.com"
