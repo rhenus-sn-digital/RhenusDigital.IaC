@@ -42,7 +42,8 @@ resource "azurerm_private_dns_a_record" "cit-dns-record" {
 
 locals {
   cosmos_primary_ip   = azurerm_private_endpoint.private-endpoint.private_service_connection[0].private_ip_address
-  cosmos_secondary_ip = tostring(tonumber(split( ".", local.cosmos_primary_ip )[3])+1)
+  last_ip_number      = split( ".", local.cosmos_primary_ip )[3]
+  cosmos_secondary_ip = replace(local.cosmos_primary_ip, ".${local.last_ip_number}", tostring(tonumber(local.last_ip_number)+1))
 }
 
 resource "azurerm_private_dns_a_record" "cit-dns-record-north-europe" {
