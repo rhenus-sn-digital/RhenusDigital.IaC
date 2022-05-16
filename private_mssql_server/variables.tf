@@ -6,6 +6,7 @@ variable "stage" {
 variable "domain" {
   description = "The name of the domain, to which this resource belongs (e.g. booking)"
   type        = string
+  default     = ""
 }
 
 variable "application" {
