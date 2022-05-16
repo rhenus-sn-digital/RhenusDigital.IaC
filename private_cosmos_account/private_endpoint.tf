@@ -40,7 +40,7 @@ resource "azurerm_private_dns_a_record" "cit-dns-record" {
   }
 }
 
-resource "azurerm_private_dns_a_record" "cit-dns-record" {
+resource "azurerm_private_dns_a_record" "cit-dns-record-north-europe" {
   provider = azurerm.cit
 
   name                = "${azurerm_cosmosdb_account.cosmos-db-account.name}-northeurope"
