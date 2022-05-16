@@ -22,3 +22,34 @@ resource "azurerm_private_endpoint" "private-endpoint" {
 
   tags = var.tags
 }
+
+
+data "azurerm_subscription" "current" {}
+
+resource "azurerm_private_dns_a_record" "cit-dns-record" {
+  provider = azurerm.cit
+
+  name                = azurerm_cosmosdb_account.cosmos-db-account.name
+  records             = [azurerm_private_endpoint.private-endpoint.private_service_connection[0].private_ip_address]
+  resource_group_name = "app_0003_DNS_prod_rg"
+  ttl                 = 300
+  zone_name           = "privatelink.documents.azure.com"
+
+  tags = {
+    subscription = data.azurerm_subscription.current.display_name
+  }
+}
+
+resource "azurerm_private_dns_a_record" "cit-dns-record" {
+  provider = azurerm.cit
+
+  name                = "${azurerm_cosmosdb_account.cosmos-db-account.name}-northeurope"
+  records             = [azurerm_private_endpoint.private-endpoint.private_service_connection[0].private_ip_address]
+  resource_group_name = "app_0003_DNS_prod_rg"
+  ttl                 = 300
+  zone_name           = "privatelink.documents.azure.com"
+
+  tags = {
+    subscription = data.azurerm_subscription.current.display_name
+  }
+}
