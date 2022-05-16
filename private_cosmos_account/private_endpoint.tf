@@ -30,7 +30,7 @@ resource "azurerm_private_dns_a_record" "cit-dns-record" {
   provider = azurerm.cit
 
   name                = azurerm_cosmosdb_account.cosmos-db-account.name
-  records             = [azurerm_private_endpoint.private-endpoint.private_service_connection[0].private_ip_address]
+  records             = [local.cosmos_primary_ip]
   resource_group_name = "app_0003_DNS_prod_rg"
   ttl                 = 300
   zone_name           = "privatelink.documents.azure.com"
@@ -40,11 +40,16 @@ resource "azurerm_private_dns_a_record" "cit-dns-record" {
   }
 }
 
+locals {
+  cosmos_primary_ip   = azurerm_private_endpoint.private-endpoint.private_service_connection[0].private_ip_address
+  cosmos_secondary_ip = tostring(tonumber(split( '.', local.cosmos_primary_ip )[3])+1)
+}
+
 resource "azurerm_private_dns_a_record" "cit-dns-record-north-europe" {
   provider = azurerm.cit
 
   name                = "${azurerm_cosmosdb_account.cosmos-db-account.name}-northeurope"
-  records             = [azurerm_private_endpoint.private-endpoint.private_dns_zone_configs[1].ip_addresses[0]]
+  records             = [local.cosmos_secondary_ip]
   resource_group_name = "app_0003_DNS_prod_rg"
   ttl                 = 300
   zone_name           = "privatelink.documents.azure.com"
