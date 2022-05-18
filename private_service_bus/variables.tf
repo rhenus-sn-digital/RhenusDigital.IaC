@@ -21,7 +21,17 @@ variable "location" {
   default     = "northeurope"
 }
 
+variable "tags" {
+  description = "A mapping of tags to assign to the resource."
+  type        = map(string)
+}
+
 variable "resource_group_name" {
   description = "The resource group in which the resource will be deployed."
+  type        = string
+}
+
+variable "subnet_id" {
+  description = "he Subnet ID which should be able to access this ServiceBus Namespace."
   type        = string
 }
