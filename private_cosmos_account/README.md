@@ -11,6 +11,7 @@
 | Name | Version |
 |------|---------|
 | <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~>2.97.0 |
+| <a name="provider_azurerm.cit"></a> [azurerm.cit](#provider\_azurerm.cit) | ~>2.97.0 |
 
 ## Modules
 
@@ -21,8 +22,11 @@ No modules.
 | Name | Type |
 |------|------|
 | [azurerm_cosmosdb_account.cosmos-db-account](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/cosmosdb_account) | resource |
+| [azurerm_private_dns_a_record.cit-dns-record](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_dns_a_record) | resource |
+| [azurerm_private_dns_a_record.cit-dns-record-north-europe](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_dns_a_record) | resource |
 | [azurerm_private_endpoint.private-endpoint](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_endpoint) | resource |
 | [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config) | data source |
+| [azurerm_subscription.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/subscription) | data source |
 
 ## Inputs
 
