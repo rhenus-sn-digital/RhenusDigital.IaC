@@ -23,7 +23,7 @@ resource "azurerm_key_vault_key" "database-encryption-key" {
   key_size     = 2048
 
   key_opts = [
-    "Encrypt", "Decrypt", "WrapKey", "UnwrapKey"
+    "encrypt", "decrypt", "wrapKey", "unwrapKey"
   ]
   tags     = var.tags
 
