@@ -35,3 +35,8 @@ variable "subnet_id" {
   description = "he Subnet ID which should be able to access this ServiceBus Namespace."
   type        = string
 }
+
+variable "dns_zone_id" {
+  description = "Specifies the Private DNS Zone id to include within the private_dns_zone_group"
+  type        = string
+}
