@@ -4,11 +4,11 @@ resource "azurerm_key_vault_access_policy" "mssql-server-pool" {
   object_id    = azurerm_mssql_server.mssql-server.identity[0].principal_id
 
   key_permissions = [
-    "get",
-    "encrypt",
-    "decrypt",
-    "wrapKey",
-    "unwrapKey"
+    "Get",
+    "Encrypt",
+    "Decrypt",
+    "WrapKey",
+    "UnwrapKey"
   ]
 
   depends_on = [
@@ -23,7 +23,7 @@ resource "azurerm_key_vault_key" "database-encryption-key" {
   key_size     = 2048
 
   key_opts = [
-    "encrypt", "decrypt", "wrapKey", "unwrapKey"
+    "Encrypt", "Decrypt", "WrapKey", "UnwrapKey"
   ]
   tags     = var.tags
 
