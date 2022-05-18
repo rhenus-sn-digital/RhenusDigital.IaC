@@ -7,14 +7,14 @@ kv-`organization`-`domain`-`application`-`stage`
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~>1.1.5 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~>2.97.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~>3.6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~>2.97.0 |
-| <a name="provider_azurerm.cit"></a> [azurerm.cit](#provider\_azurerm.cit) | ~>2.97.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~>3.6.0 |
+| <a name="provider_azurerm.cit"></a> [azurerm.cit](#provider\_azurerm.cit) | ~>3.6.0 |
 
 ## Modules
 
