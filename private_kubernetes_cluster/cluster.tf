@@ -7,10 +7,6 @@ resource "azurerm_kubernetes_cluster" "private-kubernetes" {
   kubernetes_version      = var.kubernetes_version
   private_cluster_enabled = true
 
-  role_based_access_control {
-    enabled = false
-  }
-
   default_node_pool {
     name                = var.default_node_pool_name
     type                = var.default_node_pool_type
