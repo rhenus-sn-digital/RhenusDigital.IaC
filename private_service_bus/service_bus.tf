@@ -9,8 +9,7 @@ resource "azurerm_servicebus_namespace" "message-hub" {
 }
 
 resource "azurerm_servicebus_namespace_network_rule_set" "message-hub" {
-  namespace_name                = azurerm_servicebus_namespace.message-hub.name
-  resource_group_name           = azurerm_servicebus_namespace.message-hub.resource_group_name
+  namespace_id                  = azurerm_servicebus_namespace.message-hub.id
   default_action                = "Deny"
   public_network_access_enabled = true
 
