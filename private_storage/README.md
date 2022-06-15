@@ -57,6 +57,8 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_connection_string"></a> [connection\_string](#output\_connection\_string) | n/a |
+| <a name="output_id"></a> [id](#output\_id) | n/a |
 | <a name="output_name"></a> [name](#output\_name) | n/a |
 | <a name="output_private-ip"></a> [private-ip](#output\_private-ip) | n/a |
+| <a name="output_resource_group_name"></a> [resource\_group\_name](#output\_resource\_group\_name) | n/a |
 <!-- END_TF_DOCS -->
