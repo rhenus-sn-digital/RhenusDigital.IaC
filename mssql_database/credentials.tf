@@ -11,7 +11,7 @@ resource "random_string" "user-login" {
 
   length  = 16
   special = false
-  number  = false
+  numeric = false
 }
 
 resource "random_password" "user-password" {
@@ -19,7 +19,7 @@ resource "random_password" "user-password" {
 
   length  = 36
   special = true
-  number  = true
+  numeric = true
   upper   = true
   lower   = true
 
