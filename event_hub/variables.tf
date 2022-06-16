@@ -38,5 +38,5 @@ variable "capture_storage_account_id" {
 variable "capture_archive_format" {
   description = "The Blob naming convention for archiving. e.g. {Namespace}/{EventHub}/{PartitionId}/{Year}/{Month}/{Day}/{Hour}/{Minute}/{Second}. Here all the parameters (Namespace,EventHub .. etc) are mandatory irrespective of order"
   type        = string
-  default     = "{EventHub}/{Year}-{Month}-{Day}/{Hour}/"
+  default     = "{Namespace}/{EventHub}-{PartitionId}/{Year}-{Month}-{Day}/{Hour}:{Minute}:{Second}"
 }
