@@ -1,7 +1,9 @@
 terraform {
   required_version = "~>1.1.5"
   required_providers {
-    configuration_aliases = [mssql]
+    mssql = {
+      configuration_aliases = [mssql]
+    }
   }
 }
 provider "mssql" {
