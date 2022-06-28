@@ -1,13 +1,3 @@
-terraform {
-  required_version = "~>1.1.5"
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~>3.6.0"
-    }
-  }
-}
-
 locals {
   website_dns_name     = "privatelink.azurewebsites.net"
   blob_dns_name        = "privatelink.blob.core.windows.net"

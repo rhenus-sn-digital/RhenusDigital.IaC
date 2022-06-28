@@ -1,5 +1,4 @@
 <!-- BEGIN_TF_DOCS -->
-
 ## Requirements
 
 No requirements.
@@ -27,7 +26,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_capture_archive_format"></a> [capture\_archive\_format](#input\_capture\_archive\_format) | The Blob naming convention for archiving. e.g. {Namespace}/{EventHub}/{PartitionId}/{Year}/{Month}/{Day}/{Hour}/{Minute}/{Second}. Here all the parameters (Namespace,EventHub .. etc) are mandatory irrespective of order | `string` | `"{EventHub}/{Year}-{Month}-{Day}/{Hour}/"` | no |
+| <a name="input_capture_archive_format"></a> [capture\_archive\_format](#input\_capture\_archive\_format) | The Blob naming convention for archiving. e.g. {Namespace}/{EventHub}/{PartitionId}/{Year}/{Month}/{Day}/{Hour}/{Minute}/{Second}. Here all the parameters (Namespace,EventHub .. etc) are mandatory irrespective of order | `string` | `"{Namespace}/{EventHub}-{PartitionId}/{Year}-{Month}-{Day}/{Hour}:{Minute}:{Second}"` | no |
 | <a name="input_capture_blob_container_name"></a> [capture\_blob\_container\_name](#input\_capture\_blob\_container\_name) | The name of the Container within the Blob Storage Account where messages should be archived. | `string` | `"eventhub"` | no |
 | <a name="input_capture_storage_account_id"></a> [capture\_storage\_account\_id](#input\_capture\_storage\_account\_id) | The ID of the Blob Storage Account where messages should be archived. | `string` | n/a | yes |
 | <a name="input_event_hub_name"></a> [event\_hub\_name](#input\_event\_hub\_name) | The name of the event hub | `string` | n/a | yes |
@@ -45,5 +44,4 @@ No modules.
 | <a name="output_manage_connection_string"></a> [manage\_connection\_string](#output\_manage\_connection\_string) | n/a |
 | <a name="output_name"></a> [name](#output\_name) | n/a |
 | <a name="output_send_connection_string"></a> [send\_connection\_string](#output\_send\_connection\_string) | n/a |
-
 <!-- END_TF_DOCS -->
