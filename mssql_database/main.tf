@@ -6,9 +6,6 @@ terraform {
     }
   }
 }
-provider "mssql" {
-  debug = false
-}
 
 # Scope Servers
 # Alphanumerics and hyphens.
