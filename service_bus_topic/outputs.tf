@@ -1,3 +1,3 @@
 output "topic" {
-  value = ""
+  value = data.azurerm_servicebus_topic.topic.name
 }
