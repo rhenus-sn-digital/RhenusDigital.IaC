@@ -1,7 +1,9 @@
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~>1.1.5 |
 
 ## Providers
 
@@ -21,8 +23,8 @@ No modules.
 |------|------|
 | [azurerm_mssql_database.database](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_database) | resource |
 | [azurerm_mssql_database_extended_auditing_policy.database-auditing](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_database_extended_auditing_policy) | resource |
-| [mssql_login.login](https://registry.terraform.io/providers/hashicorp/mssql/latest/docs/resources/login) | resource |
-| [mssql_user.user](https://registry.terraform.io/providers/hashicorp/mssql/latest/docs/resources/user) | resource |
+| [mssql_login.login](https://registry.terraform.io/providers/betr-io/mssql/latest/docs/resources/login) | resource |
+| [mssql_user.user](https://registry.terraform.io/providers/betr-io/mssql/latest/docs/resources/user) | resource |
 | [random_password.user-password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) | resource |
 | [random_string.user-login](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
 | [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config) | data source |
