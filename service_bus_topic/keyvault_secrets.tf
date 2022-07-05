@@ -21,3 +21,9 @@ resource "azurerm_key_vault_secret" "topic-mange-key" {
   name         = "${local.name}-topic-manage-connection-string"
   value        = azurerm_servicebus_topic_authorization_rule.mange.primary_connection_string
 }
+
+resource "azurerm_key_vault_secret" "topic-name"{
+  key_vault_id = var.pipeline_key_vault_id
+  name         = "${local.name}-topic-name"
+  value        = azurerm_servicebus_topic.topic.name
+}
