@@ -2,7 +2,14 @@ resource "azurerm_key_vault_secret" "topic-id" {
   key_vault_id = var.pipeline_key_vault_id
   name         = "${local.name}-topic-id"
   value        = azurerm_servicebus_topic.topic.id
+
 }
+resource "azurerm_key_vault_secret" "topic-name"{
+  key_vault_id = var.pipeline_key_vault_id
+  name         = "${local.name}-topic-name"
+  value        = azurerm_servicebus_topic.topic.name
+}
+
 
 resource "azurerm_key_vault_secret" "topic-listen-key" {
   key_vault_id = var.pipeline_key_vault_id
