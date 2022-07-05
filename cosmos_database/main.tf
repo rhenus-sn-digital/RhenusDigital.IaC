@@ -1,5 +1,5 @@
 locals {
-  name = var.domain
+  name = "${var.domain}${var.application != "" ? "-": ""}${var.application}"
 }
 
 data "azurerm_cosmosdb_account" "account" {
