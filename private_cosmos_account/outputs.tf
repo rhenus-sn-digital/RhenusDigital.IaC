@@ -8,6 +8,6 @@ output "resource_group_name" {
 
 
 output "connection_string" {
-  value     = "${azurerm_cosmosdb_account.cosmos-db-account.endpoint};AccountKey=${azurerm_cosmosdb_account.cosmos-db-account.primary_key};"
+  value     = "AccountEndpoint=${azurerm_cosmosdb_account.cosmos-db-account.endpoint};AccountKey=${azurerm_cosmosdb_account.cosmos-db-account.primary_key};"
   sensitive = true
 }
