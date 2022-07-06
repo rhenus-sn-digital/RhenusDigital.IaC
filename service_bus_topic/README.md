@@ -12,7 +12,7 @@ No requirements.
 ## Modules
 
 No modules.
- 
+
 ## Resources
 
 | Name | Type |
@@ -20,6 +20,7 @@ No modules.
 | [azurerm_key_vault_secret.topic-id](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) | resource |
 | [azurerm_key_vault_secret.topic-listen-key](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) | resource |
 | [azurerm_key_vault_secret.topic-mange-key](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) | resource |
+| [azurerm_key_vault_secret.topic-name](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) | resource |
 | [azurerm_key_vault_secret.topic-send-key](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/key_vault_secret) | resource |
 | [azurerm_servicebus_topic.topic](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/servicebus_topic) | resource |
 | [azurerm_servicebus_topic_authorization_rule.listen](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/servicebus_topic_authorization_rule) | resource |
@@ -41,4 +42,7 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_topic"></a> [topic](#output\_topic) | n/a |
+| <a name="output_topic_connection_string_listen"></a> [topic\_connection\_string\_listen](#output\_topic\_connection\_string\_listen) | n/a |
+| <a name="output_topic_connection_string_mange"></a> [topic\_connection\_string\_mange](#output\_topic\_connection\_string\_mange) | n/a |
+| <a name="output_topic_connection_string_send"></a> [topic\_connection\_string\_send](#output\_topic\_connection\_string\_send) | n/a |
 <!-- END_TF_DOCS -->
