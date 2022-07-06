@@ -12,7 +12,7 @@ No requirements.
 ## Modules
 
 No modules.
-
+ 
 ## Resources
 
 | Name | Type |
