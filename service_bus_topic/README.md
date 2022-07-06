@@ -45,4 +45,5 @@ No modules.
 | <a name="output_topic_connection_string_listen"></a> [topic\_connection\_string\_listen](#output\_topic\_connection\_string\_listen) | n/a |
 | <a name="output_topic_connection_string_mange"></a> [topic\_connection\_string\_mange](#output\_topic\_connection\_string\_mange) | n/a |
 | <a name="output_topic_connection_string_send"></a> [topic\_connection\_string\_send](#output\_topic\_connection\_string\_send) | n/a |
+| <a name="output_topic_id"></a> [topic\_id](#output\_topic\_id) | n/a |
 <!-- END_TF_DOCS -->
