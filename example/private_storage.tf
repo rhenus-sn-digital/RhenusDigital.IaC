@@ -28,7 +28,6 @@ module "private_storage" {
 
 //variables
 variable "STAGE" {}
-
 variable "iac_resource_group_name" {}
 variable "app_subnet_id" {}
 variable "virtual_network_name" {}
