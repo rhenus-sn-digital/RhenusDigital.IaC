@@ -1,6 +1,6 @@
 output "connection_string" {
   value     = "AccountEndpoint=${data.azurerm_cosmosdb_account.account.endpoint};AccountKey=${data.azurerm_cosmosdb_account.account.primary_key};"
-  sensitive = true
+  #sensitive = true
 
 }
 output "primary_key" {
