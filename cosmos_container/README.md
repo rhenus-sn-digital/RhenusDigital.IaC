@@ -36,4 +36,5 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_connection_string"></a> [connection\_string](#output\_connection\_string) | n/a |
+| <a name="output_primary_key"></a> [primary\_key](#output\_primary\_key) | n/a |
 <!-- END_TF_DOCS -->
