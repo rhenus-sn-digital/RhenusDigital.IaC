@@ -4,11 +4,11 @@ resource "azurerm_key_vault_access_policy" "mssql-server-pool" {
   object_id    = azurerm_mssql_server.mssql-server.identity[0].principal_id
 
   key_permissions = [
-    "get",
-    "encrypt",
-    "decrypt",
-    "wrapKey",
-    "unwrapKey"
+    "Get",
+    "Encrypt",
+    "Decrypt",
+    "WrapKey",
+    "UnwrapKey"
   ]
 
   depends_on = [

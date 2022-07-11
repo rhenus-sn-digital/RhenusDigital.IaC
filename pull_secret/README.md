@@ -1,5 +1,4 @@
 <!-- BEGIN_TF_DOCS -->
-
 ## Requirements
 
 No requirements.
@@ -18,7 +17,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [kubernetes_secret.ps-acr-rhenus-digital](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret) | resource |
+| [kubernetes_secret.pull-secret](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret) | resource |
 
 ## Inputs
 
@@ -35,5 +34,4 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_pull-secret-name"></a> [pull-secret-name](#output\_pull-secret-name) | n/a |
-
 <!-- END_TF_DOCS -->

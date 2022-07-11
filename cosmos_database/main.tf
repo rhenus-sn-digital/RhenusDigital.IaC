@@ -1,15 +1,5 @@
-terraform {
-  required_version = "~>1.1.5"
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~>2.97.0"
-    }
-  }
-}
-
 locals {
-  name = var.domain
+  name = "${var.domain}${var.application != "" ? "-": ""}${var.application}"
 }
 
 data "azurerm_cosmosdb_account" "account" {

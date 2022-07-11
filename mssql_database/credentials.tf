@@ -11,7 +11,7 @@ resource "random_string" "user-login" {
 
   length  = 16
   special = false
-  number  = false
+  numeric = false
 }
 
 resource "random_password" "user-password" {
@@ -19,7 +19,7 @@ resource "random_password" "user-password" {
 
   length  = 36
   special = true
-  number  = true
+  numeric = true
   upper   = true
   lower   = true
 
@@ -39,7 +39,6 @@ resource "mssql_login" "login" {
       password = var.sql_server_administrator_password
     }
   }
-  default_database = azurerm_mssql_database.database.name
   login_name       = local.create-login ? random_string.user-login[0].result : var.user_login
   password         = local.create-password ? random_password.user-password[0].result : var.user_password
 

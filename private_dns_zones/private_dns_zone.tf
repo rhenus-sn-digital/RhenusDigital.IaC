@@ -68,3 +68,16 @@ data "azurerm_private_dns_zone" "cosmos-dns-zone" {
   name                = local.cosmos_dns_name
   resource_group_name = var.resource_group_name
 }
+
+resource "azurerm_private_dns_zone" "service-bus-dns-zone" {
+  count               = local.count_dns_zone
+  name                = local.service_bus_dns_name
+  resource_group_name = var.resource_group_name
+  tags                = var.tags
+}
+
+data "azurerm_private_dns_zone" "service-bus-dns-zone" {
+  count               = local.get_dns_zone
+  name                = local.service_bus_dns_name
+  resource_group_name = var.resource_group_name
+}

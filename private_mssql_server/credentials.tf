@@ -11,7 +11,7 @@ resource "random_string" "administrator-login" {
 
   length  = 16
   special = false
-  number  = false
+  numeric = false
 }
 
 resource "random_password" "administrator-password" {
@@ -19,7 +19,7 @@ resource "random_password" "administrator-password" {
   
   length  = 36
   special = true
-  number  = true
+  numeric = true
   upper   = true
   lower   = true
 

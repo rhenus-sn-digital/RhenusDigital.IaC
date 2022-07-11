@@ -1,18 +1,11 @@
 terraform {
   required_version = "~>1.1.5"
   required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~>2.97.0"
-    }
     mssql = {
-      source = "betr-io/mssql"
-      version = "~>0.2.4"
+      source                = "betr-io/mssql"
+      configuration_aliases = [mssql]
     }
   }
-}
-provider "mssql" {
-  debug = false
 }
 
 # Scope Servers

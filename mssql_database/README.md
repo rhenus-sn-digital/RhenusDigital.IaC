@@ -4,8 +4,6 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~>1.1.5 |
-| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~>2.97.0 |
-| <a name="requirement_mssql"></a> [mssql](#requirement\_mssql) | ~>0.2.4 |
 
 ## Providers
 
@@ -62,6 +60,7 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_connection_string"></a> [connection\_string](#output\_connection\_string) | n/a |
+| <a name="output_name"></a> [name](#output\_name) | n/a |
 | <a name="output_password"></a> [password](#output\_password) | n/a |
 | <a name="output_user"></a> [user](#output\_user) | n/a |
 <!-- END_TF_DOCS -->

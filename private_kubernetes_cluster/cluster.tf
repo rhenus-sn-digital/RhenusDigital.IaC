@@ -19,7 +19,7 @@ resource "azurerm_kubernetes_cluster" "private-kubernetes" {
 
   network_profile {
     network_plugin     = "azure"
-    load_balancer_sku  = "Standard"
+    load_balancer_sku  = "standard"
     docker_bridge_cidr = "172.17.0.1/16"
     dns_service_ip     = "10.0.0.10"
     service_cidr       = "10.0.0.0/16"
