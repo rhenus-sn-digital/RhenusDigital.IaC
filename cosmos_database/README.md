@@ -31,5 +31,9 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_account-name"></a> [account-name](#output\_account-name) | n/a |
+| <a name="output_database-id"></a> [database-id](#output\_database-id) | n/a |
+| <a name="output_database-name"></a> [database-name](#output\_database-name) | n/a |
 <!-- END_TF_DOCS -->
